@@ -11,6 +11,399 @@
         <style>
         @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Montserrat');
         @import url('https://fonts.googleapis.com/css?family=Poppins');
+        
+        
+body {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 25px;
+ font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 12px;
+}
+
+p {
+    text-align: justify;
+}
+
+p#caption {
+     font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 10px;
+    text-align: left;   
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position:fixed;
+    top: 0px; 
+    left: 0; 
+    width: 100%;
+    text-shadow: 2px 2px 8px #000;
+    z-index: -10;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+h3 a {
+    color: #333;
+}
+
+h3 a:hover {
+    color: #777;
+    text-decoration:none;
+}
+
+h5 a {
+    color: #000;
+}
+
+h5 a:hover {
+    color: #777;
+    text-decoration:none;
+}
+
+hr {
+    border: 1px solid #121212;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top:75px;
+    width: 100%;
+}
+
+
+li {
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+li a:hover {
+    background-color: #444;
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:active {
+   background-color: #444; 
+}
+
+.intro {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 8rem;
+  opacity: 0.85;
+  background:url("https://i.imgur.com/LAfkOYT.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.search {
+  width: 300px;
+  position: fixed;
+  top: 77px;
+  right: 55px;
+}
+
+.searchy {
+  width: 300px;
+  position: fixed;
+  top: 75px;
+  right: 60px;
+}
+
+.searchybtn {
+  position: fixed;
+  top: 70px;
+  right: 50px;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #444;
+}
+
+.searchTerm:focus{
+  color: #666;
+}
+
+.searchButton {
+  position: absolute;
+  top: 6px;
+  right: -42px;
+  width: 30px;
+  height: 26px;
+  border: 1px solid #ccc;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.content {
+  position: relative;
+  top: 10rem;
+  padding: 1rem 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 94%;
+  max-width: 640px;
+  margin: 0 auto;  
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #444;
+}
+
+input[type=reset] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=reset]:hover {
+    background-color: #444;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.slideshow {
+  width:600px;
+  height:300px;
+  background-color:#fff;
+  margin:auto;
+  background-image:url("https://i.imgur.com/ABd1SDi.jpg");
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  animation-name: slide;
+  animation-duration: 30s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0% {background-position:0 0;}
+  10% {background-position:0 0;}
+  20% {background-position:-600px 0;}
+  30% {background-position:-600px 0;}
+  40% {background-position:-1200px 0;}
+  50% {background-position:-1200px 0;}
+  60% {background-position:-1800px 0;}
+  70% {background-position:-1800px 0;}
+  80% {background-position:-2400px 0;}
+  90% {background-position:-2400px 0;}
+  100% {background-position:0 0;}
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.footerS {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.footerC {
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.textybox {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    clear: both;
+    overflow: auto;
+    text-align: justify;
+}
+
+.boxybox {
+    display: inline-block;
+    width: 450px;
+    height: 370px;
+    margin-left: 60px;
+    margin-right: 60px;
+    clear: both;
+    overflow: auto;
+    text-align: justify;
+}
+
+.boxybox h3 {
+    text-align:left;
+}
+
+.containybox {
+    display: inline-block;
+    width: auto;
+    height: 425px;
+    margin: auto;
+    clear: both;
+    padding: auto;
+}
+
+.postybox {
+    display: inline-block;
+    width: 630px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #eee;
+    background-color: #fff;
+    margin: auto;
+    padding: 10px;
+    color: #333;
+}
+
+.postybox h3{
+    color: #333;
+}
+
+
+.alignleft {
+	float: left;
+    margin-left: 10px;
+}
+.alignright {
+	float: right;
+    margin-right: 10px;
+}
+
+.thumbnail {
+      background-position:0;
+      background-repeat:no-repeat;
+      background-size:cover;
+}
+
+.col-sm-40 {
+    overflow: auto;
+}
+
+.col-md-40 {
+    overflow: auto;
+}
+
+.glyphicon-search {
+    font-size: small;
+}
+
+.btn-primary {
+    background-color: #333;
+    border: #111;
+    float:right;
+}
+
+.btn-primary a:hover {
+    background-color: #444;
+    border: #222;
+}
+
+.bloggy {
+    font-size: 11pt;
+    color: #333;
+}
+
+.carousel-caption {
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.floaty {
+    display: block;
+    width: 150px;
+    height: 75px;
+    margin-top: -30px;
+    margin-left: 650px;
+    position: relative;
+}
+
         </style>
         
         <link href="resources/css/index.css" type="text/css" rel="stylesheet">
